@@ -1,0 +1,8 @@
+tkinter milestone
+python3 /home/pemba/.Dismis-HA_slave1/DISMIS-HA.py >> dismis.log 2>&1 &
+/home/pemba/d1_SuperDismis/Dismis-HA_GUI/DISMIS-HA.py >> /home/pemba/d1_SuperDismis/Dismis-HA_GUI/SystemService/Dismis_HA_log/Dismis_HA_wholesystem.log 2>&1 &
+
+
+
+upload dismis_logs file to its own googledrive
+copy log file to seperate folder and outof dismis-ha everyday start and merge with it

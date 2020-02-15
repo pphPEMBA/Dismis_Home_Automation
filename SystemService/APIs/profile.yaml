@@ -1,0 +1,114 @@
+name: Pemba Tamang
+default_CityLocation: kakarbhitta
+openweatherAPI: cca979ed5fb2c8d3a9c99594191482f9
+music_path: /home/Music
+
+main_sender: dismis.homeautomation@gmail.com
+main_passwd: D1i1s1m1i1s@
+slave_sender: pembamoktan.t@gmail.com
+slave_passwd: D1i1s1m1i1s@
+receiver: pembatamang.m@gmail.com
+personalMail: pembatamang.m@gmail.com
+personalPasswd: dtgezqiqgzujbddf
+accept_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI/SystemService/sound/accept.mp3
+else_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI/SystemService/sound/else.mp3
+Ctoken_pickle: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI/SystemService/APIs/Ctoken.pickle
+Ccredentials: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI/SystemService/APIs/Ccredentials.json
+BestfriendBirthday_date: 2020, 3, 2, 11, 00
+noteManually_txt: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI/SystemService/APIs/noteManually.txt
+memory_db: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI/SystemService/APIs/memory.db
+DISMIS_HA_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI/DISMIS-HA.py
+
+host_ip: 192.168.1.106
+login_id_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI/SystemService/APIs/login_Id.db
+
+BestfriendBirthdayProtocal_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI/SystemService/AI/BestfriendBirthdayALERT_ai.py
+PersonalGmailNotify_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI/GoogleCore/googleMailNotify.py
+flask_credentials_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI/SystemService/PrimaryCredentials/flaskServer.py
+Dismis_HA_wholesystemlog: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI/SystemService/Dismis_HA_log/Dismis_HA_wholesystem.log
+exit_Dismis_HA_log: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI/SystemService/Dismis_HA_log/exitDismis_HA.txt
+initialize_Dismis_HA_log: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI/SystemService/Dismis_HA_log/initializeDismis_HA.txt
+voice_recognitionlog: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI/SystemService/Dismis_HA_log/voice_recognize.log
+greetingMail: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI/SystemService/APIs/greetingMail.txt
+
+chromeDriver_linux: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI/SystemService/Chrome_webdriver/chromedriver_linux64/chromedriver
+chromeDriver_win: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI/SystemService/Chrome_webdriver/chromedriver_win32/chromedriver.exe
+chromeDriver_mac: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI/SystemService/Chrome_webdriver/chromedriver_mac64/chromedriver
+movieList_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI/SystemService/APIs/movieList.txt
+schedule_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI/SystemService/AI/schedule_ai.py
+
+tts_pico2wave_wav: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI/SpeechDriver/tts/tts_pico2wave.wav
+tts_main_wav: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI/SpeechDriver/tts/tts_main.wav
+tts_BestfriendBirthdayALERT_wav: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI/SpeechDriver/tts/tts_BestfriendBirthdayALERT.wav
+
+laughSound1: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI/SystemService/sound/laugh1.mp3
+laughSound2: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI/SystemService/sound/laugh2.mp3
+
+moviesDirectory: /home/d-slave1/Videos/movies/
+
+conversationTTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+date_timeTTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+greetingTTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+internetTTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+jokes_quoteTTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+noteManuallyTTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+notesTTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+rhythmbox_client_ControllerTTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+weatherTTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+youtubeTTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+FBloginTTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+Gcreate_accountTTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+GloginTTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+twitterloginTTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+AI_TTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+PrimaryCredentialsTTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+#TTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+#TTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+#TTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+#TTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+#TTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+#TTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+#TTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+#TTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+#TTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+#TTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+#TTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+#TTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+#TTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+#TTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+#TTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+#TTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+#TTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+#TTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+#TTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+#TTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+#TTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+#TTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+#TTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+#TTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+#TTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+#TTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+#TTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+#TTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+#TTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+#TTS_path: /home/d-slave1/d1_SuperDismis/Dismis-HA_GUI
+
+#else_path: /home/d-slave1/.Dismis-HA_slave1/SystemService/sound/else.mp3
+#Ctoken_pickle: /home/d-slave1/.Dismis-HA_slave1/SystemService/APIs/Ctoken.pickle
+#Ccredentials: /home/d-slave1/.Dismis-HA_slave1/SystemService/APIs/Ccredentials.json
+
+
+###
+bbc_news API: 00f744d34b3f4d4bbb31b5c8b9c00d85
+goodtell(quote)KEY: 8pYMtEEHUDM7zUomLWRRFw
+goodtell(quote)SECRET: c6J8xHAnyPo0attkbMRCu5awCKwIBOW6hRVIvo
+KAKARVITTA WEATHER: https://www.accuweather.com/en/np/kakarbhitta/244306/weather-forecast/244306
+twitter:
+    access_token:
+        Something
+    access_token_secret:
+        Something
+    consumer_key:
+        Something
+    consumer_secret:
+        Something

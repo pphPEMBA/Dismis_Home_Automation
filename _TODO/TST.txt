@@ -1,0 +1,8 @@
+what are the movies do we have :: user say --
+this is the movie list :: reply --
+play this movie:: user say
+it plays that movies:: reply
+profile ma route dinu paro
+
+
+added new txt file as movieslist
