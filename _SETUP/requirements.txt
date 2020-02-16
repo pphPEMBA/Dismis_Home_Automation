@@ -12,7 +12,10 @@ aiohttp
 flask
 Flask-SQLAlchemy
 pyaudio
+schedule
+
 fpdf
+
 
 
 

@@ -87,4 +87,4 @@ if __name__ == '__main__':
     while True:
         Dismis_HomeAutomation()
 
-#python3 /home/pemba/d1_SuperDismis/Dismis-HA_GUI/DISMIS-HA.py >> /home/pemba/d1_SuperDismis/Dismis-HA_GUI/SystemService/Dismis_HA_log/Dismis_HA_wholesystem.log 2>&1 &
+#python3 ~/.Dismis_Home_Automation/DISMIS-HA.py >> ~/.Dismis_Home_Automation/SystemService/Dismis_HA_log/Dismis_HA_wholesystem.log 2>&1 &

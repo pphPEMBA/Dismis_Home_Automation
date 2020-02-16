@@ -5,7 +5,7 @@ import yaml, os, socket
 """ Importing profile.py path """
 #from Core.profile import *
 #profile = open(profile_path)
-profile = open('/home/pemba/d1_SuperDismis/Dismis-HA_GUI/SystemService/APIs/profile.yaml')
+profile = open('/home/d-slave1/d1_SuperDismis/Dismis_Home_Automation/SystemService/APIs/profile.yaml')
 profile_data = yaml.safe_load(profile)
 profile.close()
 host_ip= profile_data['host_ip']
@@ -139,10 +139,8 @@ try:
     db.create_all()
     print(' ')
     print(' ')
-    app.run(debug=True,host='192.168.1.106')
     print('--- Flask Is Running!! ---')
-    print(' ')
-    print(' ')
+    app.run(debug=True,host='192.168.1.106')
 except OSError:
     print('--- Requested Address Already Assign!! ---')
     print(' ')

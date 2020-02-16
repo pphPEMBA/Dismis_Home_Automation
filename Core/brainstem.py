@@ -330,7 +330,7 @@ def cmd(voice_text, name, default_CityLocation, openweatherAPI, main_sender, mai
             d = open('PrevVolLevel.txt','w+')
             d.write(PrevVolLevel)
             d.close()
-            os.system("pactl -- set-sink-volume 0 45%")
+            os.system("pactl -- set-sink-volume 0 30%")
             os.system('play /home/d-slave1/.Dismis-HA_slave1/SystemService/sound/else.mp3')
             with open('PrevVolLevel.txt','r') as f:
                 PrevVolLevel_txt = f.read()

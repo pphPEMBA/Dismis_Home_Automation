@@ -25,7 +25,7 @@ def speak(message):
 
 """ Importing Profiles """
 import yaml
-profile = open("/home/d-slave1/d1_SuperDismis/Dismis-HA_GUI/SystemService/APIs/profile.yaml")
+profile = open("/home/d-slave1/d1_SuperDismis/Dismis_Home_Automation/SystemService/APIs/profile.yaml")
 profile_data = yaml.safe_load(profile)
 profile.close()
 #Functioning Variables

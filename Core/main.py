@@ -176,20 +176,16 @@ def startup():
 
 
 """ Running All Main Functions """
-#startup()
-time.sleep(1)
-online = (['Now the Dismis system is fully online', 'I\'m ready to go','I have been activited fully'])
-speak(random.choice(online))
+startup()
 """ Running Parallel Processes """
-#chkMail = Process(target = PersonalGmailNotify(PersonalGmailNotify_path))
-#chkMail.start()
-#bffbirthday = Process(target = BestfriendBirthdayProtocal(BestfriendBirthdayProtocal_path))
-#bffbirthday.start()
-#credentials = Process(target = flask_credentials(flask_credentials_path))
-#credentials.start()
-#routine = Process(target = schedule(schedule_path))
-#routine.start()
-# if __name__ == '__main__':
-    # while True:
+chkMail = Process(target = PersonalGmailNotify(PersonalGmailNotify_path))
+chkMail.start()
+bffbirthday = Process(target = BestfriendBirthdayProtocal(BestfriendBirthdayProtocal_path))
+bffbirthday.start()
+credentials = Process(target = flask_credentials(flask_credentials_path))
+credentials.start()
+routine = Process(target = schedule(schedule_path))
+routine.start()
+
 
 
