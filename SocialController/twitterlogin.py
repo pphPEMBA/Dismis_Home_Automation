@@ -17,7 +17,7 @@ profile_data = yaml.safe_load(profile)
 profile.close()
 #Functioning Variables
 twitterloginTTS_path = profile_data['twitterloginTTS_path']
-twitterloginTTS = twitterloginTTS_path + '/SpeechDriver/ServicesTTS/twitterloginTTS/'
+twitterloginTTS = twitterloginTTS_path + '/SpeechDriver/tts/ServicesTTS/twitterloginTTS/'
 #print(twitterloginTTS)
 
 

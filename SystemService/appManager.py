@@ -10,6 +10,17 @@ def Log_Time():
     now = datetime.datetime.now()
     print(now.strftime("%Y-%m-%d %H:%M:%S"))
 
+""" Importing Profiles """
+import yaml
+from Core.profile import profile_path
+profile = open(profile_path)
+profile_data = yaml.safe_load(profile)
+profile.close()
+#Functioning Variables
+appManagerTTS_path = profile_data['appManagerTTS_path']
+appManagerTTS = appManagerTTS_path + '/SpeechDriver/tts/ServicesTTS/appManagerTTS/'
+#print(appManagerTTS)
+
 def chromeClose(accept_path):
     os.system('play ' + accept_path +' &')
     print(' ')

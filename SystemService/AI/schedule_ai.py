@@ -40,7 +40,7 @@ slave_sender = profile_data['slave_sender']
 slave_passwd = profile_data['slave_passwd']
 receiver = profile_data['receiver']
 conversationTTS_path = profile_data['conversationTTS_path']
-conversationTTS = conversationTTS_path + '/SpeechDriver/ServicesTTS/conversationTTS/'
+conversationTTS = conversationTTS_path + '/SpeechDriver/tts/ServicesTTS/conversationTTS/'
 #print(conversationTTS)
 
 
@@ -192,9 +192,9 @@ def routine6(slave_sender, slave_passwd, receiver):
 """ Every day at 12am or 00:00 time bedtime() is called. """
 schedule.every().day.at("10:00").do(routine1, slave_sender, slave_passwd, receiver)
 schedule.every().day.at("13:00").do(routine2, slave_sender, slave_passwd, receiver)
-schedule.every().day.at("14:15").do(routine3, slave_sender, slave_passwd, receiver)
+schedule.every().day.at("14:30").do(routine3, slave_sender, slave_passwd, receiver)
 schedule.every().day.at("17:00").do(routine4, slave_sender, slave_passwd, receiver)
-schedule.every().day.at("18:50").do(routine5, slave_sender, slave_passwd, receiver)
+schedule.every().day.at("19:00").do(routine5, slave_sender, slave_passwd, receiver)
 schedule.every().day.at("11:05").do(routine6, slave_sender, slave_passwd, receiver)
 
 # Loop so that the scheduling task

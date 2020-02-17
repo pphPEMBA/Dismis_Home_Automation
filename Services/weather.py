@@ -22,7 +22,7 @@ profile_data = yaml.safe_load(profile)
 profile.close()
 #Functioning Variables
 weatherTTS_path = profile_data['weatherTTS_path']
-weatherTTS = weatherTTS_path + '/SpeechDriver/ServicesTTS/weatherTTS/'
+weatherTTS = weatherTTS_path + '/SpeechDriver/tts/ServicesTTS/weatherTTS/'
 #print(weatherTTS)
 
 

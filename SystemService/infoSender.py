@@ -16,15 +16,17 @@ def Log_Time():
     now = datetime.datetime.now()
     print(now.strftime("%Y-%m-%d %H:%M:%S"))
 
-""" Importing profile.py path """
+""" Importing Profiles """
 import yaml
-#from Core.profile import *
-#profile = open(profile_path)
-profile = open('/home/d-slave1/d1_SuperDismis/Dismis_Home_Automation/SystemService/APIs/profile.yaml')
+from Core.profile import profile_path
+profile = open(profile_path)
 profile_data = yaml.safe_load(profile)
 profile.close()
+#Functioning Variables
 host_ip= profile_data['host_ip']
-
+infoSenderTTS_path = profile_data['infoSenderTTS_path']
+infoSenderTTS = infoSenderTTS_path + '/SpeechDriver/tts/ServicesTTS/infoSenderTTS/'
+#print(infoSenderTTS)
 
 def backupGmailCodeInfo(main_sender, main_passwd, receiver, accept_path):
     try:

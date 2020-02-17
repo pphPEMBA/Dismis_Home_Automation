@@ -34,13 +34,9 @@ slave_passwd = profile_data['slave_passwd']
 receiver = profile_data['receiver']
 conversationTTS_path = profile_data['conversationTTS_path']
 conversationTTS = conversationTTS_path + '/SpeechDriver/tts/ServicesTTS/conversationTTS/'
-#print(conversationTTS)
-
-#BestfriendBirthday_path = profile_data['BestfriendBirthday_path']
-#BestfriendBirthday_date = profile_data['BestfriendBirthday_date']
 
 import smtplib
-def Alert1(slave_sender, slave_passwd, receiver):
+def Alert5(slave_sender, slave_passwd, receiver):
     try:
         From = slave_sender
         to = receiver
@@ -52,39 +48,26 @@ def Alert1(slave_sender, slave_passwd, receiver):
         server.login(slave_sender, slave_passwd)
         server.sendmail(From, to, msg)
         server.quit()
-        print('--- Reminder Mail Sent ---')
+        print('--- StopEvent Mail Sent ---')
     except socket.gaierror:
         pass
-""" Tkinter """
-#from tkinter import *
-def tk_window():
-    #root = Tk()
-    #root.geometry('1150x300+120+0')
-    #root.title("Dismis's Birthday Reminder")
-    #output = 'Boss, Anisha\'s birthday is tomorrow. Don\'t forget to wish her at 12 o\'clock'
-    #speak('Boss, Anisha\'s birthday is tomorrow. Don\'t forget to wish her at 12 o\'clock')
-    #Label(root, padx = 3000, pady = 3000, compound=CENTER, text=output, bg="#171717", fg = "white", font='times 15 bold').pack()
-    #root.after(5000, lambda: root.destroy())
-    #root.mainloop()
-    
-startTime = datetime.datetime(2020, 3, 2, 10, 00) #Years Months Days Hours Minutes
-#२०७६ फागुन १९
-#2020 March 2  
-#2020, 3, 2, 11, 00
+
+startTime = datetime.datetime(2020, 4, 18, 10, 00) #Years Months Days Hours Minutes
+#2020, 4, 18, 10, 00 [Baishak 6 2077]
 while datetime.datetime.now() < startTime:
     time.sleep(1)
+output = 'Boss, it\'s time to change schedule\'s time and routines in schedule_ai.py, schedule.txt'
 print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
 print(' ')
 print(' ')
 Log_Time()
-print('Boss, Anisha\'s birthday is tomorrow. Don\'t forget to wish her at 12 o\'clock')
-Alert1(slave_sender, slave_passwd, receiver)
+print(output')
+Alert5(slave_sender, slave_passwd, receiver)
 print(' ')
 print(' ')
-print('\t\t\t\tFunction: BestfriendBirthdayALERT_ai')
+print('\t\t\t\tFunction: StopEvent_ai')
 print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
-speak('Boss, Anisha\'s birthday is tomorrow. Don\'t forget to wish her at 12 o\'clock')
-#tk_window()
-time.sleep(1)
+speak(output')
+
 
 

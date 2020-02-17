@@ -16,8 +16,11 @@ profile = open(profile_path)
 profile_data = yaml.safe_load(profile)
 profile.close()
 #Functioning Variables
+slave_sender = profile_data['slave_sender']
+slave_passwd = profile_data['slave_passwd']
+receiver = profile_data['receiver']
 conversationTTS_path = profile_data['conversationTTS_path']
-conversationTTS = conversationTTS_path + '/SpeechDriver/ServicesTTS/conversationTTS/'
+conversationTTS = conversationTTS_path + '/SpeechDriver/tts/ServicesTTS/conversationTTS/'
 #print(conversationTTS)
 
 
@@ -826,23 +829,6 @@ def transferingDismis(accept_path):
     transferingDismis_txt.write(result)
     os.system('gnome-terminal -x python3 ' + conversationTTS + 'transferingDismis__tts.py &')
 
-
-def imgoingout(accept_path):
-    os.system('play ' + accept_path +' &')
-    time.sleep(1)
-    result = 'PEMBA please check the schedule before going out.'
-    print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
-    print(' ')
-    print(' ')
-    Log_Time()
-    print(result)
-    print(' ')
-    print(' ')
-    print('\t\t\t\tSkill: imgoingout')
-    print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
-    imgoingout_txt = open('imgoingout.txt','w+')
-    imgoingout_txt.write(result)
-    os.system('gnome-terminal -x python3 ' + conversationTTS + 'imgoingout__tts.py &')
 
 def dismisLaugh(accept_path, laughSound1, laughSound2):
     os.system('play ' + accept_path +' &')

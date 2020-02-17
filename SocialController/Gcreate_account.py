@@ -19,7 +19,7 @@ profile_data = yaml.safe_load(profile)
 profile.close()
 #Functioning Variables
 Gcreate_accountTTS_path = profile_data['Gcreate_accountTTS_path']
-Gcreate_accountTTS = Gcreate_accountTTS_path + '/SpeechDriver/ServicesTTS/Gcreate_accountTTS/'
+Gcreate_accountTTS = Gcreate_accountTTS_path + '/SpeechDriver/tts/ServicesTTS/Gcreate_accountTTS/'
 #print(Gcreate_accountTTS)
 
 

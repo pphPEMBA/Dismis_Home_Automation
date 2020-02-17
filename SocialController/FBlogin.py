@@ -17,7 +17,7 @@ profile_data = yaml.safe_load(profile)
 profile.close()
 #Functioning Variables
 FBloginTTS_path = profile_data['FBloginTTS_path']
-FBloginTTS = FBloginTTS_path + '/SpeechDriver/ServicesTTS/FBloginTTS/'
+FBloginTTS = FBloginTTS_path + '/SpeechDriver/tts/ServicesTTS/FBloginTTS/'
 #print(FBloginTTS)
 
 

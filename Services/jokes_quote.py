@@ -25,7 +25,7 @@ profile_data = yaml.safe_load(profile)
 profile.close()
 #Functioning Variables
 jokes_quoteTTS_path = profile_data['jokes_quoteTTS_path']
-jokes_quoteTTS = jokes_quoteTTS_path + '/SpeechDriver/ServicesTTS/jokes_quoteTTS/'
+jokes_quoteTTS = jokes_quoteTTS_path + '/SpeechDriver/tts/ServicesTTS/jokes_quoteTTS/'
 #print(jokes_quoteTTS)
 
 

@@ -15,7 +15,7 @@ profile_data = yaml.safe_load(profile)
 profile.close()
 #Functioning Variables
 rhythmbox_client_ControllerTTS_path = profile_data['rhythmbox_client_ControllerTTS_path']
-rhythmbox_client_ControllerTTS = rhythmbox_client_ControllerTTS_path + '/SpeechDriver/ServicesTTS/rhythmbox_client_ControllerTTS/'
+rhythmbox_client_ControllerTTS = rhythmbox_client_ControllerTTS_path + '/SpeechDriver/tts/ServicesTTS/rhythmbox_client_ControllerTTS/'
 #print(rhythmbox_client_ControllerTTS)
 
 

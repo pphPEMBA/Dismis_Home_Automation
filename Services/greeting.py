@@ -28,8 +28,11 @@ profile = open(profile_path)
 profile_data = yaml.safe_load(profile)
 profile.close()
 #Functioning Variables
+slave_sender = profile_data['slave_sender']
+slave_passwd = profile_data['slave_passwd']
+receiver = profile_data['receiver']
 greetingTTS_path = profile_data['greetingTTS_path']
-greetingTTS = greetingTTS_path + '/SpeechDriver/ServicesTTS/greetingTTS/'
+greetingTTS = greetingTTS_path + '/SpeechDriver/tts/ServicesTTS/greetingTTS/'
 #print(greetingTTS)
 
     
@@ -150,7 +153,7 @@ def Alert4(slave_sender, slave_passwd, receiver):
         body = ''    # string to store the body of the mail
         msg.attach(MIMEText(body, 'plain'))     # attach the body with the msg instance 
         filename = "greetingMail.txt"    # open the file to be sent  
-        attachment = open("/home/pemba/d1_SuperDismis/Dismis-HA_GUI/SystemService/APIs/greetingMail.txt", "rb") 
+        attachment = open("/home/d-slave1/d1_SuperDismis/Dismis_Home_Automation/SystemService/APIs/greetingMail.txt", "rb") 
         p = MIMEBase('application', 'octet-stream')     # instance of MIMEBase and named as p 
         p.set_payload((attachment).read())     # To change the payload into encoded form 
         encoders.encode_base64(p)     # encode into base64
@@ -200,6 +203,55 @@ def Greeting(accept_path):
     os.system('rm ' + greetingMail + ' &')
     print(' ')
 
+
+
+def imgoingout(accept_path):
+    os.system('play ' + accept_path +' &')
+    time.sleep(1)
+    result = 'PEMBA please check the schedule before going out.'
+    print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
+    print(' ')
+    print(' ')
+    Log_Time()
+    print(result)
+    print(' ')
+    print(' ')
+    print('\t\t\t\tSkill: imgoingout')
+    print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
+    speak(result)
+    #imgoingout_txt = open('imgoingout.txt','w+')
+    #imgoingout_txt.write(result)
+    #os.system('gnome-terminal -x python3 ' + conversationTTS + 'imgoingout__tts.py &')
+    import smtplib, socket
+    from email.mime.multipart import MIMEMultipart 
+    from email.mime.text import MIMEText 
+    from email.mime.base import MIMEBase 
+    from email import encoders 
+    try:
+        fromaddr = slave_sender
+        toaddr = receiver
+        msg = MIMEMultipart() # instance of MIMEMultipart 
+        msg['From'] = fromaddr    # storing the main_senders email address 
+        msg['To'] = toaddr   # storing the receivers email address 
+        msg['Subject'] = "SCHEDULE AND GOOGLE CALENDAR's EVENTS!"# storing the subject  
+        body = 'no body'   # string to store the body of the mail
+        msg.attach(MIMEText(body, 'plain'))     # attach the body with the msg instance 
+        filename = "schedule_Gcalendar.txt"    # open the file to be sent  
+        attachment = open("/home/d-slave1/d1_SuperDismis/Dismis_Home_Automation/SystemService/APIs/schedule_Gcalendar.txt", "rb") 
+        p = MIMEBase('application', 'octet-stream')     # instance of MIMEBase and named as p 
+        p.set_payload((attachment).read())     # To change the payload into encoded form 
+        encoders.encode_base64(p)     # encode into base64
+        p.add_header('Content-Disposition', "attachment; filename= %s" % filename) 
+        msg.attach(p)     # attach the instance 'p' to instance 'msg' 
+        s = smtplib.SMTP('smtp.gmail.com', 587)     # creates SMTP session 
+        s.starttls()     # start TLS for security 
+        s.login(fromaddr, slave_passwd)     # Authentication 
+        text = msg.as_string()     # Converts the Multipart msg into a string 
+        s.sendmail(fromaddr, toaddr, text)     # sending the mail 
+        s.quit()     # terminating the session 
+        speak('Schedule sent successfully in your primary mail')
+    except socket.gaierror:
+        pass
 
 #still testing
 """ CONVERTING *.txt > *.pdf """

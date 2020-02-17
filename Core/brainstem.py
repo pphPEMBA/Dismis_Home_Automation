@@ -7,7 +7,7 @@ import os
 import subprocess
 
 
-def cmd(voice_text, name, default_CityLocation, openweatherAPI, main_sender, main_passwd, slave_sender, slave_passwd, receiver, personalMail, personalPasswd, accept_path, else_path, Ctoken_pickle, Ccredentials, noteManually_txt, memory_db, DISMIS_HA_path, BestfriendBirthdayProtocal_path, PersonalGmailNotify_path,chromeDriver_linux ,chromeDriver_win ,chromeDriver_mac ,greetingMail, schedule_path, movieList_path, laughSound1, laughSound2, moviesDirectory, conversationTTS_path, date_timeTTS_path, greetingTTS_path, internetTTS_path, jokes_quoteTTS_path, noteManuallyTTS_path, notesTTS_path, rhythmbox_client_ControllerTTS_path, weatherTTS_path, youtubeTTS_path, FBloginTTS_path, Gcreate_accountTTS_path, GloginTTS_path, twitterloginTTS_path, AI_TTS_path, PrimaryCredentialsTTS_path):
+def cmd(voice_text, name, default_CityLocation, openweatherAPI, main_sender, main_passwd, slave_sender, slave_passwd, receiver, personalMail, personalPasswd, accept_path, else_path, Ctoken_pickle, Ccredentials, noteManually_txt, memory_db, DISMIS_HA_path, BestfriendBirthdayProtocal_path, PersonalGmailNotify_path,chromeDriver_linux ,chromeDriver_win ,chromeDriver_mac ,greetingMail, schedule_path, movieList_path, laughSound1, laughSound2, moviesDirectory, conversationTTS_path, date_timeTTS_path, greetingTTS_path, internetTTS_path, jokes_quoteTTS_path, noteManuallyTTS_path, notesTTS_path, rhythmbox_client_ControllerTTS_path, weatherTTS_path, youtubeTTS_path, FBloginTTS_path, Gcreate_accountTTS_path, GloginTTS_path, twitterloginTTS_path, AI_TTS_path, PrimaryCredentialsTTS_path, appManagerTTS_path, infoSenderTTS_path, systemTaskTTS_path, updateSystemTTS_path, volumeControllerTTS_path):
     def check_message(check):
         """
          This function checks if the items in the list (specified in
@@ -97,8 +97,6 @@ def cmd(voice_text, name, default_CityLocation, openweatherAPI, main_sender, mai
         conversation.firstcrush(accept_path)
     elif check_message(['i' ,'transferring', 'you']) or check_message(['i' ,'transferring', 'dismiss']): #error
         conversation.transferingDismis(accept_path)
-    elif check_message(['i','going','out']):
-        conversation.imgoingout(accept_path)
     elif check_message(['laugh']) or check_message(['can','laugh']):
         conversation.dismisLaugh(accept_path, laughSound1, laughSound2)
     elif check_message(['which', 'service','control', 'alert','1']) or check_message(['which', 'service','control', 'alert','one']):
@@ -124,6 +122,8 @@ def cmd(voice_text, name, default_CityLocation, openweatherAPI, main_sender, mai
 
     elif check_message(['good','morning']) or check_message(['good','afternoon']) or check_message(['good','evening']) or check_message(['good','night']):
         greeting.Greeting(accept_path)
+    elif check_message(['i','going','out']):
+        greeting.imgoingout(accept_path)
         
     elif check_message(['search', 'google']) or check_message(['on', 'google']):
         internet.google(voice_text, accept_path)

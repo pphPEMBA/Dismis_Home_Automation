@@ -22,7 +22,7 @@ profile_data = yaml.safe_load(profile)
 profile.close()
 #Functioning Variables
 youtubeTTS_path = profile_data['youtubeTTS_path']
-youtubeTTS = youtubeTTS_path + '/SpeechDriver/ServicesTTS/youtubeTTS/'
+youtubeTTS = youtubeTTS_path + '/SpeechDriver/tts/ServicesTTS/youtubeTTS/'
 #print(youtubeTTS)
 
 

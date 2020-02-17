@@ -8,3 +8,5 @@ for filepath in glob.iglob('./**/*.txt', recursive=True):
     s = s.replace('hello', 'world')
     with open(filepath, "w") as file:
         file.write(s)
+
+

@@ -17,7 +17,7 @@ profile_data = yaml.safe_load(profile)
 profile.close()
 #Functioning Variables
 GloginTTS_path = profile_data['GloginTTS_path']
-GloginTTS = GloginTTS_path + '/SpeechDriver/ServicesTTS/GloginTTS/'
+GloginTTS = GloginTTS_path + '/SpeechDriver/tts/ServicesTTS/GloginTTS/'
 #print(GloginTTS)
 
 

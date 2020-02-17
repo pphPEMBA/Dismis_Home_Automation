@@ -16,7 +16,7 @@ profile_data = yaml.safe_load(profile)
 profile.close()
 #Functioning Variables
 date_timeTTS_path = profile_data['date_timeTTS_path']
-date_timeTTS = date_timeTTS_path + '/SpeechDriver/ServicesTTS/date_timeTTS_path/'
+date_timeTTS = date_timeTTS_path + '/SpeechDriver/tts/ServicesTTS/date_timeTTS_path/'
 #print(date_timeTTS)
 
 """ GLOBAL FUNCTION """

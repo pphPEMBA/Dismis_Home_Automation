@@ -127,3 +127,8 @@ Fri Feb 14 17:52:17 2020: Dismis-Home Automation Exit
 Fri Feb 14 17:52:40 2020: Dismis-Home Automation Exit 
 Sat Feb 15 17:58:26 2020: Dismis-Home Automation Exit 
 Sat Feb 15 18:00:42 2020: Dismis-Home Automation Exit 
+Sun Feb 16 17:48:39 2020: Dismis-Home Automation Exit 
+Sun Feb 16 17:59:10 2020: Dismis-Home Automation Exit 
+Sun Feb 16 18:10:56 2020: Dismis-Home Automation Exit 
+Sun Feb 16 18:13:04 2020: Dismis-Home Automation Exit 
+Mon Feb 17 17:56:50 2020: Dismis-Home Automation Exit 

@@ -8,6 +8,17 @@ import time
 from SpeechDriver.tts.ttsdefault import speak
 
 
+""" Importing Profiles """
+import yaml
+from Core.profile import profile_path
+profile = open(profile_path)
+profile_data = yaml.safe_load(profile)
+profile.close()
+#Functioning Variables
+updateSystemTTS_path = profile_data['updateSystemTTS_path']
+updateSystemTTS = updateSystemTTS_path + '/SpeechDriver/tts/ServicesTTS/updateSystemTTS/'
+#print(updateSystemTTS)
+ 
 """ GLOBAL FUNCTION """
 def Log_Time():
     import datetime

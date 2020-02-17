@@ -5,6 +5,17 @@ import time
 
 #from tkinter import *
 
+""" Importing Profiles """
+import yaml
+from Core.profile import profile_path
+profile = open(profile_path)
+profile_data = yaml.safe_load(profile)
+profile.close()
+#Functioning Variables
+volumeControllerTTS_path = profile_data['volumeControllerTTS_path']
+volumeControllerTTS = volumeControllerTTS_path + '/SpeechDriver/tts/ServicesTTS/volumeControllerTTS/'
+#print(volumeControllerTTS)
+
 """ GLOBAL FUNCTION """
 def Log_Time():
     import datetime

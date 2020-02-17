@@ -24,7 +24,7 @@ profile_data = yaml.safe_load(profile)
 profile.close()
 #Functioning Variables
 internetTTS_path = profile_data['internetTTS_path']
-internetTTS = internetTTS_path + '/SpeechDriver/ServicesTTS/internetTTS/'
+internetTTS = internetTTS_path + '/SpeechDriver/tts/ServicesTTS/internetTTS/'
 #print(internetTTS)
 
 #search google

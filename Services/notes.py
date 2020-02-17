@@ -22,7 +22,7 @@ profile_data = yaml.safe_load(profile)
 profile.close()
 #Functioning Variables
 notesTTS_path = profile_data['notesTTS_path']
-notesTTS = notesTTS_path + '/SpeechDriver/ServicesTTS/notesTTS/'
+notesTTS = notesTTS_path + '/SpeechDriver/tts/ServicesTTS/notesTTS/'
 #print(notesTTS)
 
 

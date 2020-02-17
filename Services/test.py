@@ -10,7 +10,7 @@ accept_path = profile_data['accept_path']
 slave_sender = profile_data['slave_sender']
 slave_passwd = profile_data['slave_passwd']
 receiver = profile_data['receiver']
-conversationTTS = conversationTTS_path + '/SpeechDriver/ServicesTTS/conversationTTS/'
+conversationTTS = conversationTTS_path + '/SpeechDriver/tts/ServicesTTS/conversationTTS/'
 
 def whatthingcando(slave_sender, slave_passwd, accept_path):
     os.system('play ' + accept_path +' &')

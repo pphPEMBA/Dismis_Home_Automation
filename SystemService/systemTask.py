@@ -14,6 +14,16 @@ def Log_Time():
     now = datetime.datetime.now()
     print(now.strftime("%Y-%m-%d %H:%M:%S"))
 
+""" Importing Profiles """
+import yaml
+from Core.profile import profile_path
+profile = open(profile_path)
+profile_data = yaml.safe_load(profile)
+profile.close()
+#Functioning Variables
+systemTaskTTS_path = profile_data['systemTaskTTS_path']
+systemTaskTTS = systemTaskTTS_path + '/SpeechDriver/tts/ServicesTTS/systemTaskTTS/'
+#print(systemTaskTTS)
 
 def screen_off__LINUX(accept_path):   #linux
     #Turn of screen instantly

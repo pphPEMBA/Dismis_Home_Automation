@@ -62,6 +62,11 @@ GloginTTS_path: /home/d-slave1/d1_SuperDismis/Dismis_Home_Automation
 twitterloginTTS_path: /home/d-slave1/d1_SuperDismis/Dismis_Home_Automation
 AI_TTS_path: /home/d-slave1/d1_SuperDismis/Dismis_Home_Automation
 PrimaryCredentialsTTS_path: /home/d-slave1/d1_SuperDismis/Dismis_Home_Automation
+appManagerTTS_path: /home/d-slave1/d1_SuperDismis/Dismis_Home_Automation
+infoSenderTTS_path: /home/d-slave1/d1_SuperDismis/Dismis_Home_Automation
+systemTaskTTS_path: /home/d-slave1/d1_SuperDismis/Dismis_Home_Automation
+updateSystemTTS_path: /home/d-slave1/d1_SuperDismis/Dismis_Home_Automation
+volumeControllerTTS_path: /home/d-slave1/d1_SuperDismis/Dismis_Home_Automation
 #TTS_path: /home/d-slave1/d1_SuperDismis/Dismis_Home_Automation
 #TTS_path: /home/d-slave1/d1_SuperDismis/Dismis_Home_Automation
 #TTS_path: /home/d-slave1/d1_SuperDismis/Dismis_Home_Automation

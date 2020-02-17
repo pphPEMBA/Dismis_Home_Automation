@@ -68,6 +68,13 @@ GloginTTS_path = profile_data['GloginTTS_path']
 twitterloginTTS_path = profile_data['twitterloginTTS_path']
 AI_TTS_path = profile_data['AI_TTS_path']
 PrimaryCredentialsTTS_path = profile_data['PrimaryCredentialsTTS_path']
+appManagerTTS_path = profile_data['appManagerTTS_path']
+infoSenderTTS_path = profile_data['infoSenderTTS_path']
+systemTaskTTS_path = profile_data['systemTaskTTS_path']
+updateSystemTTS_path = profile_data['updateSystemTTS_path']
+volumeControllerTTS_path = profile_data['volumeControllerTTS_path']
+
+
 #tts_pico2wave_wav = profile_data['tts_pico2wave_wav']
 #tts_main_wav = profile_data['tts_main_wav']
 #tts_BestfriendBirthdayALERT_wav = profile_data['tts_BestfriendBirthdayALERT_wav']
