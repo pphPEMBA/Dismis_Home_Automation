@@ -151,7 +151,7 @@ def cmd(voice_text, name, default_CityLocation, openweatherAPI, main_sender, mai
     elif check_message(['note', 'something']) or check_message(['take', 'note']) or check_message(['note','down'])\
          or check_message(['write','something']):
         notes.note_something(voice_text, accept_path, memory_db)
-    elif check_message(['show','note']) or check_message(['look', 'note']) or check_message(['see', 'note']):
+    elif check_message(['show','note']) or check_message(['look', 'note']) or check_message(['show', 'notes']):
         notes.show_all_notes(accept_path, memory_db)
     elif check_message(['play', 'song']) or check_message(['pause']) or check_message(['toggle','song']):
         rhythmbox_client_Controller.toggle(accept_path)

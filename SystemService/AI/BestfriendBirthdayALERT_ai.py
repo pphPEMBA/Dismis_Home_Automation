@@ -57,7 +57,7 @@ def Alert1(slave_sender, slave_passwd, receiver):
         pass
 """ Tkinter """
 #from tkinter import *
-def tk_window():
+#def tk_window():
     #root = Tk()
     #root.geometry('1150x300+120+0')
     #root.title("Dismis's Birthday Reminder")

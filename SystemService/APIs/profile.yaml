@@ -10,7 +10,7 @@ slave_passwd: D1i1s1m1i1s@
 receiver: pembatamang.m@gmail.com
 personalMail: pembatamang.m@gmail.com
 personalPasswd: dtgezqiqgzujbddf
-accept_path: /home/d-slave1/d1_SuperDismis/Dismis_Home_Automation/SystemService/sound/accept.mp3
+accept_path: /home/d-slave1/d1_SuperDismis/Dismis_Home_Automation/SystemService/sound/accept.wav
 else_path: /home/d-slave1/d1_SuperDismis/Dismis_Home_Automation/SystemService/sound/else.mp3
 Ctoken_pickle: /home/d-slave1/d1_SuperDismis/Dismis_Home_Automation/SystemService/APIs/Ctoken.pickle
 Ccredentials: /home/d-slave1/d1_SuperDismis/Dismis_Home_Automation/SystemService/APIs/Ccredentials.json

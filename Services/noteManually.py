@@ -33,7 +33,7 @@ def note_manually(accept_path, noteManually_txt):
     print(' ')
     print(' ')
     Log_Time()
-    print('Pemba rember you\'ve to save it manually, And opening gedit.')
+    print('Pemba remember you\'ve to save it manually, And opening gedit.')
     print(' ')
     print(' ')
     print('\t\t\t\tSkill: note_manually')

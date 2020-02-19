@@ -19,8 +19,8 @@ apt-get install pavucontrol #guiPulseAudio
 pip3 install --upgrade google-api-python-client google-auth-httplib2 #google-auth-oauthlib #google-api-python-clients
 pip3 install -r $DISMIS_HOME_AUTOMATION_SETUP_DIR/requirements.txt #Python3 Libraries
 echo " "
-pico2wave -w speech.wav "Hello PEMBA, please reconfigure mpg123 volume at 30% in PulseAudio Control. Now opening PulseAudio Control application" && aplay speech.wav && rm speech.wav
-mpg123 $DISMIS_HOME_AUTOMATION_SETUP_DIR/volReconfigure_MPG123.mp3
+pico2wave -w speech.wav "Hello PEMBA, please reconfigure m p g one two three volume at 30 percent in PulseAudio Control. Now opening PulseAudio Control application" && aplay speech.wav && rm speech.wav
+mpg123 $DISMIS_HOME_AUTOMATION_SETUP_DIR/.volReconfigure_MPG123.mp3
 pavucontrol
 now=.$(date +"%T")
 mkdir $DISMIS_HOME_AUTOMATION_SETUP_DIR/$now

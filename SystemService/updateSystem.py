@@ -36,7 +36,7 @@ def update_system(accept_path):
     #root.title("Dismis-HA_slave1's System Update")
     user_distributor_id = subprocess.check_output('lsb_release -i', shell=True)
     user_distribution = user_distributor_id.decode("utf-8").split('\t')[1]
-    result = "updating operating system, Please save your work or you may face some dasta loss after reboot"
+    result = "updating operating system, Please save your work or you may face some data loss after reboot, Enter the password"
     print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
     print(' ')
     print(' ')

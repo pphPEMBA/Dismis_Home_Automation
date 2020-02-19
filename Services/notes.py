@@ -74,7 +74,7 @@ def show_all_notes(accept_path, memory_db):
         print(' ')
         print('\t\t\t\tSkill: show_all_notes')
         print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
-        result(row[0])
+        #result(row[0])
     conn.close()
     show_all_notes_txt = open('show_all_notes.txt','w+')
     show_all_notes_txt.write(result)
