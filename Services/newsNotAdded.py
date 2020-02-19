@@ -29,7 +29,7 @@ newsTTS = newsTTS_path + '/SpeechDriver/tts/ServicesTTS/newsTTS/'
 
 
 def top_google_news(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -52,7 +52,7 @@ def top_google_news(accept_path):
 
 top_google_news()
 def news(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)

@@ -25,7 +25,7 @@ noteManuallyTTS = noteManuallyTTS_path + '/SpeechDriver/tts/ServicesTTS/noteManu
 def note_manually(accept_path, noteManually_txt):
     ''' Opens 'noteManually.txt' using gedit to let users to set the appointments manually.
     Also displays the previous appointments. '''
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -51,7 +51,7 @@ def note_manually(accept_path, noteManually_txt):
 
 def readNote_manually(accept_path, noteManually_txt):
     ''' Reads the appointments line by line from noteManually.txt '''
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     print(' ')
     print(' ')

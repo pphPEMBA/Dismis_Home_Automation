@@ -27,7 +27,7 @@ def Log_Time():
 
 
 def update_system(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -36,23 +36,24 @@ def update_system(accept_path):
     #root.title("Dismis-HA_slave1's System Update")
     user_distributor_id = subprocess.check_output('lsb_release -i', shell=True)
     user_distribution = user_distributor_id.decode("utf-8").split('\t')[1]
+    result = "updating operating system, Please save your work or you may face some dasta loss after reboot"
     print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
     print(' ')
     print(' ')
     Log_Time()
     print(user_distribution)
-    print('Please save your work or you may face some data loss after reboot')
+    print(result)
     print(' ')
     print(' ')
     print('\t\t\t\tSkill: update_system')
     print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
-    result = "updating operating system, Please save your work or you may face some data loss after reboot"
-    updateSystem_txt = open('updateSystem.txt','w+')
-    updateSystem_txt.write(result)
-    os.system('gnome-terminal -x python3 ' + updateSystemTTS + 'updateSystem__tts.py &')
-    label = Label(root, padx = 3000, pady = 3000, compound=CENTER, text=result, bg="#171717", fg = "white", font='times 15 bold').pack()
+    speak(result)
+    #updateSystem_txt = open('updateSystem.txt','w+')
+    #updateSystem_txt.write(result)
+    #os.system('gnome-terminal -x python3 ' + updateSystemTTS + 'updateSystem__tts.py &')
+    #label = Label(root, padx = 3000, pady = 3000, compound=CENTER, text=result, bg="#171717", fg = "white", font='times 15 bold').pack()
     #root.after(2800, lambda: root.destroy())
-   # mainloop()
+    #mainloop()
     if user_distribution == "Ubuntu\n" or user_distribution == "LinuxMint\n":
         os.system('sudo apt-get update && sudo apt-get upgrade -y &')
 

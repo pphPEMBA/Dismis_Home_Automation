@@ -30,7 +30,7 @@ infoSenderTTS = infoSenderTTS_path + '/SpeechDriver/tts/ServicesTTS/infoSenderTT
 
 def backupGmailCodeInfo(main_sender, main_passwd, receiver, accept_path):
     try:
-        os.system('play ' + accept_path +' &')
+        os.system('aplay ' + accept_path +' &')
         print(' ')
         print(' ')
         time.sleep(1)
@@ -73,7 +73,7 @@ def backupGmailCodeInfo(main_sender, main_passwd, receiver, accept_path):
 
 def citizenshipInfo(main_sender, main_passwd, receiver, accept_path):
     try:
-        os.system('play ' + accept_path +' &')
+        os.system('aplay ' + accept_path +' &')
         print(' ')
         print(' ')
         time.sleep(1)
@@ -116,7 +116,7 @@ def citizenshipInfo(main_sender, main_passwd, receiver, accept_path):
 
 def folderlockpassInfo(main_sender, main_passwd, receiver, accept_path):
     try:
-        os.system('play ' + accept_path +' &')
+        os.system('aplay ' + accept_path +' &')
         print(' ')
         print(' ')
         time.sleep(1)
@@ -159,7 +159,7 @@ def folderlockpassInfo(main_sender, main_passwd, receiver, accept_path):
 
 def internetAccInfo(main_sender, main_passwd, receiver, accept_path):
     try:
-        os.system('play ' + accept_path +' &')
+        os.system('aplay ' + accept_path +' &')
         print(' ')
         print(' ')
         time.sleep(1)
@@ -202,7 +202,7 @@ def internetAccInfo(main_sender, main_passwd, receiver, accept_path):
 
 def othersGmailInfo(main_sender, main_passwd, receiver, accept_path):
     try:
-        os.system('play ' + accept_path +' &')
+        os.system('aplay ' + accept_path +' &')
         print(' ')
         print(' ')
         time.sleep(1)
@@ -245,7 +245,7 @@ def othersGmailInfo(main_sender, main_passwd, receiver, accept_path):
 
 def PasswordGmailInfo(main_sender, main_passwd, receiver, accept_path):
     try:
-        os.system('play ' + accept_path +' &')
+        os.system('aplay ' + accept_path +' &')
         print(' ')
         print(' ')
         time.sleep(1)
@@ -288,7 +288,7 @@ def PasswordGmailInfo(main_sender, main_passwd, receiver, accept_path):
 
 def payeerInfo(main_sender, main_passwd, receiver, accept_path):
     try:
-        os.system('play ' + accept_path +' &')
+        os.system('aplay ' + accept_path +' &')
         print(' ')
         print(' ')
         time.sleep(1)
@@ -331,7 +331,7 @@ def payeerInfo(main_sender, main_passwd, receiver, accept_path):
 
 def payoneerInfo(main_sender, main_passwd, receiver, accept_path):
     try:
-        os.system('play ' + accept_path +' &')
+        os.system('aplay ' + accept_path +' &')
         print(' ')
         print(' ')
         time.sleep(1)
@@ -374,7 +374,7 @@ def payoneerInfo(main_sender, main_passwd, receiver, accept_path):
 
 def personalGmailInfo(main_sender, main_passwd, receiver, accept_path):
     try:
-        os.system('play ' + accept_path +' &')
+        os.system('aplay ' + accept_path +' &')
         print(' ')
         print(' ')
         time.sleep(1)
@@ -417,7 +417,7 @@ def personalGmailInfo(main_sender, main_passwd, receiver, accept_path):
 
 def twillioinfo(main_sender, main_passwd, receiver, accept_path):
     try:
-        os.system('play ' + accept_path +' &')
+        os.system('aplay ' + accept_path +' &')
         print(' ')
         print(' ')
         time.sleep(1)
@@ -459,7 +459,7 @@ def twillioinfo(main_sender, main_passwd, receiver, accept_path):
         pass
 
 def test(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     fromaddr = "dismis.homeautomation@gmail.com"

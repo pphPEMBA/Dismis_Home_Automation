@@ -27,7 +27,7 @@ systemTaskTTS = systemTaskTTS_path + '/SpeechDriver/tts/ServicesTTS/systemTaskTT
 
 def screen_off__LINUX(accept_path):   #linux
     #Turn of screen instantly
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -48,7 +48,7 @@ def screen_off__LINUX(accept_path):   #linux
 
 def Os__LINUX(accept_path): #linux&Window
     #Displays information about your operating system
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -100,7 +100,7 @@ def Os__LINUX(accept_path): #linux&Window
 
 def shutdown_LINUX(accept_path):
     """Shutdown the system"""
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -123,7 +123,7 @@ def shutdown_LINUX(accept_path):
 
 def reboot_LINUX(accept_path):
     """ Reboot the system"""
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -151,7 +151,7 @@ def hibernate_LINUX(accept_path):
     Next reboot computer will restore everything - including
     Programs and open files like the shutdown never happened.
     """
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -178,7 +178,7 @@ def hybridsleep_LINUX(accept_path):
     Performs both suspend AND hibernate.
     Will quickly wake up but also survive power cut.
     """
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -203,7 +203,7 @@ def suspend_LINUX(accept_path):
 
     Operate PC on a minimum to save power but quickly wake up.
     """
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)

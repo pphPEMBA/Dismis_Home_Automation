@@ -1,21 +1,27 @@
 #!/bin/bash
-echo " ############################################################# "
+echo "############################################################# "
 echo "Updating apt, preparing to install pip3, dependencies,"
 echo "python3 libraries and other things to make Dismis_Home_Automation"
 echo "runs perfectly for now and the future"
-echo " ############################################################# "
+echo "############################################################# "
 export DISMIS_HOME_AUTOMATION_SETUP_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}" )" && pwd )"
 echo "DISMIS_HOME_AUTOMATION_SETPUT_DIR = $DISMIS_HOME_AUTOMATION_SETUP_DIR"
 echo " "
 echo "*** Installing Dependencies ***"
 apt-get update #system upate
+apt-get insall espeak #espeak
 apt-get install python3-pip #pip3
 apt-get install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0 #pyaudio
 apt-get install libttspico-utils #pico2wave
+#apt-get install sox libsox-fmt-all #sox
+apt-get install mpg123 #mpg123
+apt-get install pavucontrol #guiPulseAudio
 pip3 install --upgrade google-api-python-client google-auth-httplib2 #google-auth-oauthlib #google-api-python-clients
-apt-get install sox libsox-fmt-all #sox
 pip3 install -r $DISMIS_HOME_AUTOMATION_SETUP_DIR/requirements.txt #Python3 Libraries
 echo " "
+pico2wave -w speech.wav "Hello PEMBA, please reconfigure mpg123 volume at 30% in PulseAudio Control. Now opening PulseAudio Control application" && aplay speech.wav && rm speech.wav
+mpg123 $DISMIS_HOME_AUTOMATION_SETUP_DIR/volReconfigure_MPG123.mp3
+pavucontrol
 now=.$(date +"%T")
 mkdir $DISMIS_HOME_AUTOMATION_SETUP_DIR/$now
 echo "Making Backup of .profile .bashrc"
@@ -27,6 +33,7 @@ echo "Now moving .bashrc .profile .D-Slave1_banner.py to ~/ directory"
 cp -r $DISMIS_HOME_AUTOMATION_SETUP_DIR/.bashrc $DISMIS_HOME_AUTOMATION_SETUP_DIR/.profile $DISMIS_HOME_AUTOMATION_SETUP_DIR/.D-Slave1_banner.py ~/
 echo "Creating Dismis_Home_Automation and coping files from source to Dismis_Home_Automation"
 mkdir -p ~/.Dismis_Home_Automation
+pkill mpg123
 cd ..
 DISMIS_HOME_AUTOMATION_DIR=$(pwd)
 echo "DISMIS_HOME_AUTOMATION_DIR = "$DISMIS_HOME_AUTOMATION_DIR

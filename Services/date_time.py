@@ -27,7 +27,7 @@ def Log_Time():
 
 
 def date(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -53,7 +53,7 @@ def date(accept_path):
     os.system('gnome-terminal -x python3 ' + date_timeTTS + 'date__tts.py &')
 
 def currenttime(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)

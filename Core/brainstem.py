@@ -316,30 +316,31 @@ def cmd(voice_text, name, default_CityLocation, openweatherAPI, main_sender, mai
     #elif check_message(['what','current','volume']): #not working
         #volumeController.getCurrentVol__linux(accept_path)
     else:
-        """ Ping google.com """ 
-        from urllib.request import urlopen
-        try:
-            response = urlopen('https://www.google.com/', timeout=10)
-            print('--- ONLINE! ---')
-            # run() returns a CompletedProcess object if it was successful
-            # errors in the created process are raised here too
-            process = subprocess.run('perl SystemService/currentVol_perl.pl 0', shell=True, check=True, stdout=subprocess.PIPE, universal_newlines=True)
-            PrevVolLevel = process.stdout
-            print("***\nThe Previous Volume Level is: " + PrevVolLevel + "***")
-            print(' ')
-            d = open('PrevVolLevel.txt','w+')
-            d.write(PrevVolLevel)
-            d.close()
-            os.system("pactl -- set-sink-volume 0 30%")
-            os.system('play /home/d-slave1/.Dismis-HA_slave1/SystemService/sound/else.mp3')
-            with open('PrevVolLevel.txt','r') as f:
-                PrevVolLevel_txt = f.read()
-                os.system("pactl -- set-sink-volume 0 " + str(PrevVolLevel_txt))
-                os.system('rm PrevVolLevel.txt &')
-        except: 
-            print("--- OFFLINE! ---")
-            os.system("pactl -- set-sink-volume 0 30%")
-            os.system('play /home/d-slave1/.Dismis-HA_slave1/SystemService/sound/else.mp3')
-            print(' ')
+        os.system('mpg123 /home/d-slave1/.Dismis-HA_slave1/SystemService/sound/else.mp3')
+        #""" Ping google.com """ 
+        #from urllib.request import urlopen
+        #try:
+        #    response = urlopen('https://www.google.com/', timeout=10)
+        #    print('--- ONLINE! ---')
+        #    # run() returns a CompletedProcess object if it was successful
+        #    # errors in the created process are raised here too
+        #    process = subprocess.run('perl SystemService/currentVol_perl.pl 0', shell=True, check=True, stdout=subprocess.PIPE, universal_newlines=True)
+        #    PrevVolLevel = process.stdout
+        #    print("***\nThe Previous Volume Level is: " + PrevVolLevel + "***")
+        #    print(' ')
+        #    d = open('PrevVolLevel.txt','w+')
+        #    d.write(PrevVolLevel)
+        #    d.close()
+        #    os.system("pactl -- set-sink-volume 0 30%")
+        #    os.system('mpg123 /home/d-slave1/.Dismis-HA_slave1/SystemService/sound/else.mp3')
+        #    with open('PrevVolLevel.txt','r') as f:
+        #        PrevVolLevel_txt = f.read()
+        #        os.system("pactl -- set-sink-volume 0 " + str(PrevVolLevel_txt))
+        #        os.system('rm PrevVolLevel.txt &')
+        #except: 
+        #    print("--- OFFLINE! ---")
+        #    #os.system("pactl -- set-sink-volume 0 30%")
+        #    os.system('mpg123 /home/d-slave1/.Dismis-HA_slave1/SystemService/sound/else.mp3')
+        #    print(' ')
 
     

@@ -22,7 +22,7 @@ appManagerTTS = appManagerTTS_path + '/SpeechDriver/tts/ServicesTTS/appManagerTT
 #print(appManagerTTS)
 
 def chromeClose(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     speak('now closing')
@@ -48,7 +48,7 @@ def chromeClose(accept_path):
 
 
 def chromeOpen(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     speak('now opening')
@@ -69,7 +69,7 @@ def chromeOpen(accept_path):
 
 
 def codeClose(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     speak('now closing')
@@ -90,7 +90,7 @@ def codeClose(accept_path):
 
 
 def codeOpen(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     speak('now opening')
@@ -111,7 +111,7 @@ def codeOpen(accept_path):
 
 
 def filesClose(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     speak('now closing')
@@ -132,7 +132,7 @@ def filesClose(accept_path):
 
 
 def filesOpen(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     speak('now opening')
@@ -153,7 +153,7 @@ def filesOpen(accept_path):
 
 
 def firefoxClose(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     speak('now closing')
@@ -174,7 +174,7 @@ def firefoxClose(accept_path):
 
 
 def firefoxOpen(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     speak('now opening')
@@ -195,7 +195,7 @@ def firefoxOpen(accept_path):
 
 
 def terminalClose(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     speak('now closing')
@@ -216,7 +216,7 @@ def terminalClose(accept_path):
 
 
 def terminalOpen(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     speak('now opening')

@@ -20,7 +20,7 @@ rhythmbox_client_ControllerTTS = rhythmbox_client_ControllerTTS_path + '/SpeechD
 
 
 def toggle(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -43,7 +43,7 @@ def toggle(accept_path):
     print(' ')
 
 def stop(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -62,7 +62,7 @@ def stop(accept_path):
     #print(' ')
 
 def next(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -81,7 +81,7 @@ def next(accept_path):
     #print(' ')
 
 def previous(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -101,7 +101,7 @@ def previous(accept_path):
 
 
 def printplaying(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -123,7 +123,7 @@ def printplaying(accept_path):
     #print(' ')
 
 def repeat(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -142,7 +142,7 @@ def repeat(accept_path):
     #print(' ')
 
 def norepeat(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -161,7 +161,7 @@ def norepeat(accept_path):
     #print(' ')
 
 def shuffle(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -180,7 +180,7 @@ def shuffle(accept_path):
     #print(' ')
 
 def noshuffle(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)

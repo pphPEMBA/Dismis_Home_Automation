@@ -23,7 +23,7 @@ def Log_Time():
     print(now.strftime("%Y-%m-%d %H:%M:%S"))
 
 def volume100__Linux(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -42,12 +42,12 @@ def volume100__Linux(accept_path):
     result = "Volume set to 100%"
     #Label(root, padx = 3000, pady = 3000, compound=CENTER, text=result, bg="#171717", fg = "white", font='times 15 bold').pack()
     #root.after(2800, lambda: root.destroy())
-    volume100_txt = open('volume100.txt','w+')
-    volume100_txt.write(result)
-    os.system('gnome-terminal -x python3 ' + volumeControllerTTS + 'volume100__tts.py &')
+    #volume100_txt = open('volume100.txt','w+')
+    #volume100_txt.write(result)
+    #os.system('gnome-terminal -x python3 ' + volumeControllerTTS + 'volume100__tts.py &')
 
 def volume90__Linux(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -66,12 +66,12 @@ def volume90__Linux(accept_path):
     result = "Volume set to 90%"
     #Label(root, padx = 3000, pady = 3000, compound=CENTER, text=result, bg="#171717", fg = "white", font='times 15 bold').pack()
     #root.after(2800, lambda: root.destroy())
-    volume90_txt = open('volume90.txt','w+')
-    volume90_txt.write(result)
-    os.system('gnome-terminal -x python3 ' + volumeControllerTTS + 'volume90__tts.py &')
+    #volume90_txt = open('volume90.txt','w+')
+    #volume90_txt.write(result)
+    #os.system('gnome-terminal -x python3 ' + volumeControllerTTS + 'volume90__tts.py &')
 
 def volume80__Linux(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -90,12 +90,12 @@ def volume80__Linux(accept_path):
     result = "Volume set to 80%"
     #Label(root, padx = 3000, pady = 3000, compound=CENTER, text=result, bg="#171717", fg = "white", font='times 15 bold').pack()
     #root.after(2800, lambda: root.destroy())
-    volume80_txt = open('volume80.txt','w+')
-    volume80_txt.write(result)
-    os.system('gnome-terminal -x python3 ' + volumeControllerTTS + 'volume80__tts.py &')
+    #volume80_txt = open('volume80.txt','w+')
+    #volume80_txt.write(result)
+    #os.system('gnome-terminal -x python3 ' + volumeControllerTTS + 'volume80__tts.py &')
 
 def volume70__Linux(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -114,12 +114,12 @@ def volume70__Linux(accept_path):
     result = "Volume set to 70%"
     #Label(root, padx = 3000, pady = 3000, compound=CENTER, text=result, bg="#171717", fg = "white", font='times 15 bold').pack()
     #root.after(2800, lambda: root.destroy())
-    volume70_txt = open('volume70.txt','w+')
-    volume70_txt.write(result)
-    os.system('gnome-terminal -x python3 ' + volumeControllerTTS + 'volume70__tts.py &')
+    #volume70_txt = open('volume70.txt','w+')
+    #volume70_txt.write(result)
+    #os.system('gnome-terminal -x python3 ' + volumeControllerTTS + 'volume70__tts.py &')
 
 def volume60__Linux(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -138,12 +138,12 @@ def volume60__Linux(accept_path):
     result = "Volume set to 60%"
     #Label(root, padx = 3000, pady = 3000, compound=CENTER, text=result, bg="#171717", fg = "white", font='times 15 bold').pack()
     #root.after(2800, lambda: root.destroy())
-    volume60_txt = open('.txt','w+')
-    volume60_txt.write(result)
-    os.system('gnome-terminal -x python3 ' + volumeControllerTTS + 'volume60__tts.py &')
+    #volume60_txt = open('.txt','w+')
+    #volume60_txt.write(result)
+    #os.system('gnome-terminal -x python3 ' + volumeControllerTTS + 'volume60__tts.py &')
 
 def volume50__Linux(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -162,12 +162,12 @@ def volume50__Linux(accept_path):
     result = "Volume set to 50%"
     #Label(root, padx = 3000, pady = 3000, compound=CENTER, text=result, bg="#171717", fg = "white", font='times 15 bold').pack()
     #root.after(2800, lambda: root.destroy())
-    volume50_txt = open('volume50.txt','w+')
-    volume50_txt.write(result)
-    os.system('gnome-terminal -x python3 ' + volumeControllerTTS + 'volume50__tts.py &')
+    #volume50_txt = open('volume50.txt','w+')
+    #volume50_txt.write(result)
+    #os.system('gnome-terminal -x python3 ' + volumeControllerTTS + 'volume50__tts.py &')
 
 def volume40__Linux(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -186,12 +186,12 @@ def volume40__Linux(accept_path):
     result = "Volume set to 40%"
     #Label(root, padx = 3000, pady = 3000, compound=CENTER, text=result, bg="#171717", fg = "white", font='times 15 bold').pack()
     #root.after(2800, lambda: root.destroy())
-    volume40_txt = open('volume40.txt','w+')
-    volume40_txt.write(result)
-    os.system('gnome-terminal -x python3 ' + volumeControllerTTS + 'volume40__tts.py &')
+    #volume40_txt = open('volume40.txt','w+')
+    #volume40_txt.write(result)
+    #os.system('gnome-terminal -x python3 ' + volumeControllerTTS + 'volume40__tts.py &')
 
 def volume30__Linux(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -210,12 +210,12 @@ def volume30__Linux(accept_path):
     result = "Volume set to 30%"
     #Label(root, padx = 3000, pady = 3000, compound=CENTER, text=result, bg="#171717", fg = "white", font='times 15 bold').pack()
     #root.after(2800, lambda: root.destroy())
-    volume30_txt = open('volume30.txt','w+')
-    volume30_txt.write(result)
-    os.system('gnome-terminal -x python3 ' + volumeControllerTTS + 'volume30__tts.py &')
+    #volume30_txt = open('volume30.txt','w+')
+    #volume30_txt.write(result)
+    #os.system('gnome-terminal -x python3 ' + volumeControllerTTS + 'volume30__tts.py &')
 
 def volume20__Linux(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -234,13 +234,13 @@ def volume20__Linux(accept_path):
     result = "Volume set to 20%"
     #Label(root, padx = 3000, pady = 3000, compound=CENTER, text=result, bg="#171717", fg = "white", font='times 15 bold').pack()
     #root.after(2800, lambda: root.destroy())
-    volume20_txt = open('volume20.txt','w+')
-    volume20_txt.write(result)
-    os.system('gnome-terminal -x python3 ' + volumeControllerTTS + 'volume20__tts.py &')
+    #volume20_txt = open('volume20.txt','w+')
+    #volume20_txt.write(result)
+    #os.system('gnome-terminal -x python3 ' + volumeControllerTTS + 'volume20__tts.py &')
 
 
 def volume10__Linux(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -259,13 +259,13 @@ def volume10__Linux(accept_path):
     result = "Volume set to 10%"
     #Label(root, padx = 3000, pady = 3000, compound=CENTER, text=result, bg="#171717", fg = "white", font='times 15 bold').pack()
     #root.after(2800, lambda: root.destroy())
-    volume10_txt = open('volume10.txt','w+')
-    volume10_txt.write(result)
-    os.system('gnome-terminal -x python3 ' + volumeControllerTTS + 'volume10__tts.py &')
+    #volume10_txt = open('volume10.txt','w+')
+    #volume10_txt.write(result)
+    #os.system('gnome-terminal -x python3 ' + volumeControllerTTS + 'volume10__tts.py &')
 
 def volumeMute__Linux(accept_path):
     """Mute: Silence your speaker's sound."""
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -285,13 +285,13 @@ def volumeMute__Linux(accept_path):
     result = "Volume mute"
     #Label(root, padx = 3000, pady = 3000, compound=CENTER, text=result, bg="#171717", fg = "white", font='times 15 bold').pack()
     #root.after(2800, lambda: root.destroy())
-    volumeMute_txt = open('volumeMute.txt','w+')
-    volumeMute_txt.write(result)
-    os.system('gnome-terminal -x python3 ' + volumeControllerTTS + 'volumeMute__tts.py &')
+    #volumeMute_txt = open('volumeMute.txt','w+')
+    #volumeMute_txt.write(result)
+    #os.system('gnome-terminal -x python3 ' + volumeControllerTTS + 'volumeMute__tts.py &')
 
 def getCurrentVol__linux(accept_path): #not working
     """Get your current speaker's sound."""
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -310,9 +310,9 @@ def getCurrentVol__linux(accept_path): #not working
     result = getVol
     #Label(root, padx = 3000, pady = 3000, compound=CENTER, text=result, bg="#171717", fg = "white", font='times 15 bold').pack()
     #root.after(2800, lambda: root.destroy())
-    getCurrentVol_txt = open('getCurrentVol.txt','w+')
-    getCurrentVol_txt.write(result)
-    os.system('gnome-terminal -x python3 ' + volumeControllerTTS + 'getCurrentVol__tts.py &')
+    #getCurrentVol_txt = open('getCurrentVol.txt','w+')
+    #getCurrentVol_txt.write(result)
+    #os.system('gnome-terminal -x python3 ' + volumeControllerTTS + 'getCurrentVol__tts.py &')
 
 
 """ Worked

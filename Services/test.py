@@ -13,7 +13,7 @@ receiver = profile_data['receiver']
 conversationTTS = conversationTTS_path + '/SpeechDriver/tts/ServicesTTS/conversationTTS/'
 
 def whatthingcando(slave_sender, slave_passwd, accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     result = "I can\'t say everything instead I could send you a mail of what I can do. For that type your email below."
     whatthingcando_txt = open('whatthingcando.txt','a+')

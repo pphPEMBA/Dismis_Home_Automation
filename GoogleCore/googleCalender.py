@@ -183,7 +183,7 @@ def get_date(voice_text):
 SERVICE = authenticate_google(Ctoken_pickle, Ccredentials)
 
 def main(voice_text, accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     date = get_date(voice_text)
     if date:
         get_events(date, SERVICE)

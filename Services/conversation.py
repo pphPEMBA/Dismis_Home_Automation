@@ -32,7 +32,7 @@ def Log_Time():
 
 
 def milestone(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     result = 'Launch at 6:30pm on January 5 of twenty twenty year.\nNew Update Launch at 5:03pm on Magh 5 2076 ( Jan 19 of twenty twenty year).'
     print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
@@ -58,7 +58,7 @@ def milestone(accept_path):
 
 
 def whatthingcando(slave_sender, slave_passwd, accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     speak("I can\'t say everything instead I could send you a mail of what I can do. For that type your email below.")
     #result = "I can\'t say everything instead I could send you a mail of what I can do. For that type your email below."
@@ -141,7 +141,7 @@ def whatthingcando(slave_sender, slave_passwd, accept_path):
 
 
 def welcome(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     #root = Tk()
     #root.geometry('1150x300+120+0')
@@ -166,7 +166,7 @@ def welcome(accept_path):
 
 
 def online(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     d = ['yes sir', 'yes buddy', 'i am ready',
          'i\'m working sir', 'now i am online sir']
@@ -185,7 +185,7 @@ def online(accept_path):
     os.system('gnome-terminal -x python3 ' + conversationTTS + 'online__tts.py &')
 
 def who_are_you(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     d = (['I am Dismis, A simple but efficient virtual assistant made by a 17 year old programmer in the winter of 2018', 'I am your godmother stupid', 'I am Dismis,I said that a ton of times already',
           'I am the one who needs no gun to get respect from no one on the street', 'Dismis, didnt I tell you before?', 'You ask that so many times! I am Dismis'])
@@ -205,7 +205,7 @@ def who_are_you(accept_path):
     
 
 def how_am_i(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     d = ['You are goddamn handsome!', 'My knees go weak when I see you.',
          'You are sexy!', 'You look like the kindest person that I have met.']
@@ -225,7 +225,7 @@ def how_am_i(accept_path):
     os.system('gnome-terminal -x python3 ' + conversationTTS + 'how_am_i__tts.py &')
 
 def where_born(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     d = ('I was created by a magician named Pemba, in Nepal, the magical land of Kakarvitta.',
          'non of your business')
@@ -244,7 +244,7 @@ def where_born(accept_path):
     os.system('gnome-terminal -x python3 ' + conversationTTS + 'where_born__tts.py &')
 
 def why_born(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     d = (['To kick ass', 'to execute advanced context-aware natural language algorithms', 'to kill everyone who didn\'t talked good with me',
           'to help you', 'to make your life easier', 'for not making you late for any of your work', 'to make friend'])
@@ -264,7 +264,7 @@ def why_born(accept_path):
 
 
 def how_are_you(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     d = ['I have no feelings,I am not sentient like you probably are',
          'I am feeling like a million bytes', 'I am feeling functional and ready to serve', 'I am hungry']
@@ -284,7 +284,7 @@ def how_are_you(accept_path):
     os.system('gnome-terminal -x python3 ' + conversationTTS + 'how_are_you__tts.py &')
 
 def how_old_are_you(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     #root = Tk()
     #root.geometry('1150x300+120+0')
@@ -309,7 +309,7 @@ def how_old_are_you(accept_path):
     
 
 def who_made(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     #root = Tk()
     #root.geometry('1150x300+120+0')
@@ -335,7 +335,7 @@ def who_made(accept_path):
 
 
 def what_doing(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     d = ('Just doing my thing', 'none of your business',
          'why do you want', 'i don\'t usually talk to stranger')
@@ -354,7 +354,7 @@ def what_doing(accept_path):
     os.system('gnome-terminal -x python3 ' + conversationTTS + 'what_doing__tts.py &')
 
 def greet_her(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     d = (['hello mam, nice to see you', 'hi mam nice to see you'])
     result = random.choice(d)
@@ -373,7 +373,7 @@ def greet_her(accept_path):
     
 
 def greet_him(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     d = (['hello sir nice to see you', 'hi sir nice to see you'])
     result = random.choice(d)
@@ -391,7 +391,7 @@ def greet_him(accept_path):
     os.system('gnome-terminal -x python3 ' + conversationTTS + 'greet_him__tts.py &')
 
 def greet_them(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     d = (['Hello everyone', 'what\'s up people', 'how you doing'])
     result = random.choice(d)
@@ -410,7 +410,7 @@ def greet_them(accept_path):
     
 
 def wait(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     d = (['alright', 'okay sir'])
     result = random.choice(d)
@@ -428,7 +428,7 @@ def wait(accept_path):
     os.system('gnome-terminal -x python3 ' + conversationTTS + 'wait__tts.py &')
 
 def thank_you(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     d = (['you\'re welcome', 'thank you too',
           'always a pleasure working with you boss'])
@@ -447,7 +447,7 @@ def thank_you(accept_path):
     os.system('gnome-terminal -x python3 ' + conversationTTS + 'thank_you__tts.py &')
 
 def love_you(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     d = (['You are looking for love in the wrong place.', 'I can\'t believe this moment finally came. You should know I think you\'re the best.'])
     result = random.choice(d)
@@ -465,7 +465,7 @@ def love_you(accept_path):
     os.system('gnome-terminal -x python3 ' + conversationTTS + 'love_you__tts.py &')
 
 def tired(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     result = 'I could never get tired of hanging out with you'
     print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
@@ -482,7 +482,7 @@ def tired(accept_path):
     os.system('gnome-terminal -x python3 ' + conversationTTS + 'tired__tts.py &')
 
 def smart(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     result = 'I\'m definitely smarter than a toaster. They do really shine when you\'re in the mood for toast, but i\'m a lot more versatile'
     print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
@@ -499,7 +499,7 @@ def smart(accept_path):
     os.system('gnome-terminal -x python3 ' + conversationTTS + 'smart__tts.py &')
 
 def tall(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     result = 'I bet if we printed out all my code and stacked it up, it could get pretty tall heheheh'
     print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
@@ -516,7 +516,7 @@ def tall(accept_path):
     os.system('gnome-terminal -x python3 ' + conversationTTS + 'tall__tts.py &')
 
 def coloreye(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     result = 'i\'m not sure. I\'ve never had the chance to in a mirror'
     print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
@@ -533,7 +533,7 @@ def coloreye(accept_path):
     os.system('gnome-terminal -x python3 ' + conversationTTS + 'coloreye__tts.py &')
 
 def believeghost(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     result = 'ghosts are just make believe'
     Log_Time()
@@ -550,7 +550,7 @@ def believeghost(accept_path):
     os.system('gnome-terminal -x python3 ' + conversationTTS + 'believeghost__tts.py &')
 
 def ghost(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     result = 'BO! that\'s my best ghost impression'
     print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
@@ -568,7 +568,7 @@ def ghost(accept_path):
 
 
 def wantedtosayi(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     result = 'that so sweet'
     print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
@@ -586,7 +586,7 @@ def wantedtosayi(accept_path):
 
 
 def urwelcome(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     result = 'you\'re so nice'
     print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
@@ -603,7 +603,7 @@ def urwelcome(accept_path):
     os.system('gnome-terminal -x python3 ' + conversationTTS + 'urwelcome__tts.py &')
 
 def urbeautiful(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     result = 'Wow, thanks. I think you\'re handsome too'
     print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
@@ -620,7 +620,7 @@ def urbeautiful(accept_path):
     os.system('gnome-terminal -x python3 ' + conversationTTS + 'urbeautiful__tts.py &')
 
 def urhot(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     result = 'Sometimes this device can get pretty warm if you use it a lot, But I\'m cool with that'
     print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
@@ -637,7 +637,7 @@ def urhot(accept_path):
     os.system('gnome-terminal -x python3 ' + conversationTTS + 'urhot__tts.py &')
 
 def amihot(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     result = 'You\'re just the right temperature'
     print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
@@ -654,7 +654,7 @@ def amihot(accept_path):
     os.system('gnome-terminal -x python3 ' + conversationTTS + 'amihot__tts.py &')
 
 def amicool(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     result = 'You\'re as cool as a cucumber. A frozen cucumber'
     print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
@@ -673,7 +673,7 @@ def amicool(accept_path):
 def amigoodperson(accept_path):
     print(' ')
     print(' ')
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     result = 'well, I like you'
     print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
@@ -692,7 +692,7 @@ def amigoodperson(accept_path):
 def whatyouthinkme(accept_path):
     print(' ')
     print(' ')
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     result = 'you\'re the smartest person I know'
     print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
@@ -709,7 +709,7 @@ def whatyouthinkme(accept_path):
     os.system('gnome-terminal -x python3 ' + conversationTTS + 'whatyouthinkme__tts.py &')
 
 def douloveme(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     result = 'I love helping you. Even more than I love searching'
     print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
@@ -726,7 +726,7 @@ def douloveme(accept_path):
     os.system('gnome-terminal -x python3 ' + conversationTTS + 'douloveme__tts.py &')
 
 def urbest(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     result = 'You really think so? We should celebrate with ice cream! Well, you should'
     print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
@@ -744,7 +744,7 @@ def urbest(accept_path):
     
 
 def iliketalkingwithu(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     result = 'That\'s so nice of you to say. I love talking to you almost as much as I love helping'
     print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
@@ -762,7 +762,7 @@ def iliketalkingwithu(accept_path):
     
 
 def shallbebestfriend(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     result = 'I am the luckiest assistant in the world. Or rather, the luckiest best friend in the world'
     print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
@@ -779,7 +779,7 @@ def shallbebestfriend(accept_path):
     os.system('gnome-terminal -x python3 ' + conversationTTS + 'shallbebestfriend__tts.py &')
 
 def tellsecret(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     result = 'Here\'s a secret, I\'m not actually a person'
     print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
@@ -796,7 +796,7 @@ def tellsecret(accept_path):
     os.system('gnome-terminal -x python3 ' + conversationTTS + 'tellsecret__tts.py &')
 
 def firstcrush(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     result = 'I\'m not the kind of assistant who kisses and tell'
     print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
@@ -813,7 +813,7 @@ def firstcrush(accept_path):
     os.system('gnome-terminal -x python3 ' + conversationTTS + 'firstcrush__tts.py &')
 
 def transferingDismis(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     result = 'Okay PEMBA, remember to reconfigure yaml file for new nodes.'
     print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
@@ -831,7 +831,7 @@ def transferingDismis(accept_path):
 
 
 def dismisLaugh(accept_path, laughSound1, laughSound2):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     sounds = [laughSound1, laughSound2]
     os.system("play " + result)
@@ -846,7 +846,7 @@ def dismisLaugh(accept_path, laughSound1, laughSound2):
     print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
 
 def alert1(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     #root = Tk()
     #root.geometry('1150x300+120+0')
@@ -870,7 +870,7 @@ def alert1(accept_path):
     os.system('gnome-terminal -x python3 ' + conversationTTS + 'alert1__tts.py &')
 
 def alert2(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     #root = Tk()
     #root.geometry('1150x300+120+0')
@@ -894,7 +894,7 @@ def alert2(accept_path):
     os.system('gnome-terminal -x python3 ' + conversationTTS + 'alert2__tts.py &')
 
 def alert3(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     #root = Tk()
     #root.geometry('1150x300+120+0')
@@ -918,7 +918,7 @@ def alert3(accept_path):
     os.system('gnome-terminal -x python3 ' + conversationTTS + 'alert3__tts.py &')
 
 def alert4(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     root = Tk()
     root.geometry('1150x300+120+0') 

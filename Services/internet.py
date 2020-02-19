@@ -29,7 +29,7 @@ internetTTS = internetTTS_path + '/SpeechDriver/tts/ServicesTTS/internetTTS/'
 
 #search google
 def google(voice_text, accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     
     webbrowser.open('https://www.google.com/search?q={}'.format(voice_text))
     result = 'opening sir' + voice_text + 'in google search'
@@ -49,7 +49,7 @@ def google(voice_text, accept_path):
 
 
 def search_pics(voice_text, accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(0.28)
@@ -73,7 +73,7 @@ def search_pics(voice_text, accept_path):
     print(' ')
 
 def askinternet(voice_text, accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     reg_ex = re.search('internet(.+)', voice_text)
@@ -133,7 +133,7 @@ def askinternet(voice_text, accept_path):
 
 
 def open_website(voice_text, accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -173,7 +173,7 @@ def open_website(voice_text, accept_path):
 
 
 def location(voice_text, accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -200,7 +200,7 @@ def location(voice_text, accept_path):
 
 
 def netspeed(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)

@@ -27,15 +27,15 @@ weatherTTS = weatherTTS_path + '/SpeechDriver/tts/ServicesTTS/weatherTTS/'
 
 
 def weather_DefaultCity(default_CityLocation, openweatherAPI, accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
     #city_name= "kakarbhitta"
     speak('Extracting weather')
-    weather1 = Tk()
-    weather1.geometry('1150x300+120+0')
-    weather1.title("Dismis's Weather")
+    #weather1 = Tk()
+    #weather1.geometry('1150x300+120+0')
+    #weather1.title("Dismis's Weather")
     api_key = openweatherAPI
     base_url = "http://api.openweathermap.org/data/2.5/weather?"
     complete_url = base_url + "appid=" + api_key + "&q=" + default_CityLocation 
@@ -57,10 +57,10 @@ def weather_DefaultCity(default_CityLocation, openweatherAPI, accept_path):
         print('\t\t\t\tSkill: weather_DefaultCity')
         print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
         result = d
-        Label(weather1 , padx = 3000, pady = 3000, compound=CENTER, text=result, bg="#171717", fg = "white", font='times 15 bold').pack()
-        speak(d)
-        weather1.after(5000, lambda: weather1.destroy())
-        weather1.mainloop()
+        #Label(weather1 , padx = 3000, pady = 3000, compound=CENTER, text=result, bg="#171717", fg = "white", font='times 15 bold').pack()
+        #speak(d)
+        #weather1.after(5000, lambda: weather1.destroy())
+        #weather1.mainloop()
         weather_txt = open('weather.txt','w+')
         weather_txt.write(result)
         os.system('gnome-terminal -x python3 ' + weatherTTS + 'weather_DefaultCity__tts.py &')
@@ -74,26 +74,26 @@ def weather_DefaultCity(default_CityLocation, openweatherAPI, accept_path):
         print(' ')
         print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
         result = "Key invalid or city not found"
-        weatherlabel22 = Label(weather1 , padx = 3000, pady = 3000, compound=CENTER, text=result, bg="#171717", fg = "white", font='times 15 bold').pack()
-        speak("key invalid or city not found")
-        weather1.after(5000, lambda: weather1.destroy())
-        weather1.mainloop()   
+        #weatherlabel22 = Label(weather1 , padx = 3000, pady = 3000, compound=CENTER, text=result, bg="#171717", fg = "white", font='times 15 bold').pack()
+        #speak("key invalid or city not found")
+        #weather1.after(5000, lambda: weather1.destroy())
+        #weather1.mainloop()   
         weather_txt = open('weather.txt','w+')
         weather_txt.write(result)
         os.system('gnome-terminal -x python3 ' + weatherTTS + 'weather_DefaultCity__tts.py &')
         print(' ')
 
 def weather(openweatherAPI, accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
     city_name=input("enter city name to confirm:  ")
     speak('Extracting weather')
-    weather2 = Tk()
-    weather2.geometry('1150x300+120+0')
-    weather2.title("Dismis's Weather")
-    #speak("city you said is",city_name) #print ra speak lakda chaldana
+    #weather2 = Tk()
+    #weather2.geometry('1150x300+120+0')
+    #weather2.title("Dismis's Weather")
+    ##speak("city you said is",city_name) #print ra speak lakda chaldana
     api_key = openweatherAPI
     base_url = "http://api.openweathermap.org/data/2.5/weather?"
     complete_url = base_url + "appid=" + api_key + "&q=" + city_name 
@@ -115,10 +115,10 @@ def weather(openweatherAPI, accept_path):
         print(' ')
         print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
         result = d
-        Label(weather2 , padx = 3000, pady = 3000, compound=CENTER, text=result, bg="#171717", fg = "white", font='times 15 bold').pack()
-        speak(d)
-        weather2.after(5000, lambda: weather2.destroy())
-        weather2.mainloop()
+        #Label(weather2 , padx = 3000, pady = 3000, compound=CENTER, text=result, bg="#171717", fg = "white", font='times 15 bold').pack()
+        #speak(d)
+        #weather2.after(5000, lambda: weather2.destroy())
+        #weather2.mainloop()
         weather2_txt = open('weather2.txt','w+')
         weather2_txt.write(result)
         os.system('gnome-terminal -x python3 ' + weatherTTS + 'weather__tts.py &')
@@ -133,10 +133,10 @@ def weather(openweatherAPI, accept_path):
         print('\t\t\t\tSkill: weather')
         print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
         result = "Key invalid or city not found" 
-        Label(weather2 , padx = 3000, pady = 3000, compound=CENTER, text=result, bg="#171717", fg = "white", font='times 15 bold').pack()
-        speak("key invalid or city not found")
-        weather2.after(5000, lambda: weather2.destroy())
-        weather2.mainloop()
+        #Label(weather2 , padx = 3000, pady = 3000, compound=CENTER, text=result, bg="#171717", fg = "white", font='times 15 bold').pack()
+        #speak("key invalid or city not found")
+        #weather2.after(5000, lambda: weather2.destroy())
+        #weather2.mainloop()
         weather2_txt = open('weather2.txt','w+')
         weather2_txt.write(result)
         os.system('gnome-terminal -x python3 ' + weatherTTS + 'weather__tts.py &')

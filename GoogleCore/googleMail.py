@@ -13,7 +13,7 @@ def Log_Time():
 
 
 def gmail(personalMail, personalPasswd, accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     speak('Creating Google Mail Environment sir')
     TO = input('To whom sir, write there email: ')

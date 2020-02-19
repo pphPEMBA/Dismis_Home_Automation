@@ -170,7 +170,7 @@ def Alert4(slave_sender, slave_passwd, receiver):
         
 """ Main Greeting SKILLS """
 def Greeting(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -206,7 +206,7 @@ def Greeting(accept_path):
 
 
 def imgoingout(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     result = 'PEMBA please check the schedule before going out.'
     print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')

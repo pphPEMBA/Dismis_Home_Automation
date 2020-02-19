@@ -27,7 +27,7 @@ notesTTS = notesTTS_path + '/SpeechDriver/tts/ServicesTTS/notesTTS/'
 
 
 def note_something(voice_text, accept_path, memory_db):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -56,7 +56,7 @@ def note_something(voice_text, accept_path, memory_db):
 
 
 def show_all_notes(accept_path, memory_db):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)

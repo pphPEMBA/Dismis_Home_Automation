@@ -73,14 +73,14 @@ def in_Dismis():
 DismisJokeAPI = [Jokes, in_Dismis]
 
 def tell_joke(accept_path):
-    os.system('play ' + accept_path +' &')    
+    os.system('aplay ' + accept_path +' &')    
     print(' ')
     print(' ')
     time.sleep(1)
-    root= Tk()
-    root.geometry('1150x300+120+0')
-    root.title("Dismis's joke")
-    root.configure(background='#171717')
+    #root= Tk()
+    #root.geometry('1150x300+120+0')
+    #root.title("Dismis's joke")
+    #root.configure(background='#171717')
     dismis_jokes = random.choice(DismisJokeAPI)()
     print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
     print(' ')
@@ -93,7 +93,7 @@ def tell_joke(accept_path):
     print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
     speak(dismis_jokes)
     result = dismis_jokes
-    rootlabel = Label(root, padx = 3000, pady = 3000, compound=CENTER, text=result, bg="#171717", fg = "white", font='times 15 bold').pack()
+    #rootlabel = Label(root, padx = 3000, pady = 3000, compound=CENTER, text=result, bg="#171717", fg = "white", font='times 15 bold').pack()
     #root.after(10000, lambda: root.destroy())
     #root.mainloop()
     tell_joke_txt = open('tell_joke.txt','w+')
@@ -102,14 +102,14 @@ def tell_joke(accept_path):
     print(' ')
 
 def quote(accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
-    root= Tk()
-    root.geometry('1150x300+120+0')
-    root.title("Dismis's Quote")
-    root.configure(background='#171717')
+    #root= Tk()
+    #root.geometry('1150x300+120+0')
+    #root.title("Dismis's Quote")
+    #root.configure(background='#171717')
     oftheday = feedparser.parse("https://www.brainyquote.com/link/quotebr.rss")     #QuoteOfTheDay
     Love = feedparser.parse("https://www.brainyquote.com/link/quotelo.rss")         #LoveQuoteOfTheDay
     Art = feedparser.parse("https://www.brainyquote.com/link/quotear.rss")          #ArtQuoteOfTheDay

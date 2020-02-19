@@ -27,7 +27,7 @@ youtubeTTS = youtubeTTS_path + '/SpeechDriver/tts/ServicesTTS/youtubeTTS/'
 
 
 def playFirstVid(voice_text, accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)
@@ -76,7 +76,7 @@ def playFirstVid(voice_text, accept_path):
         print(' ')
         
 def searchVid(voice_text, accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     print(' ')
     print(' ')
     time.sleep(1)

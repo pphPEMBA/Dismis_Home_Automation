@@ -48,7 +48,7 @@ def play_random(music_path, accept_path):
     :param music_path:
     :return:
     """
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     try:
         music_listing = mp3gen(music_path)
@@ -83,7 +83,7 @@ def play_specific_music(voice_text, music_path, accept_path):
     :param music_path:
     :return:
     """
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     words_of_message = voice_text.split()
     words_of_message.remove('play')
@@ -102,7 +102,7 @@ def play_specific_music(voice_text, music_path, accept_path):
             print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
 
 def play_shuffle(music_path, accept_path):
-    os.system('play ' + accept_path +' &')
+    os.system('aplay ' + accept_path +' &')
     time.sleep(1)
     try:
         music_listing = mp3gen(music_path)
