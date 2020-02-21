@@ -91,7 +91,6 @@ def tell_joke(accept_path):
     print(' ')
     print('\t\t\t\tSkill: tell_joke')
     print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
-    speak(dismis_jokes)
     result = dismis_jokes
     #rootlabel = Label(root, padx = 3000, pady = 3000, compound=CENTER, text=result, bg="#171717", fg = "white", font='times 15 bold').pack()
     #root.after(10000, lambda: root.destroy())
@@ -138,14 +137,15 @@ def quote(accept_path):
     for x in result:
         result = x
         print(result)
+        #speak(result)
         #Label(root, text=result, bg="#171717", fg = "white", font='times 15 bold').pack()
     print(' ')
     print(' ')
     print('\t\t\t\t ::> Skill: quote')
     print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
     for z in result:
-        result1 = z
-        speak(result1)
+        result = z
+        speak(result)
     #root.after(11000, lambda: root.destroy())
     #root.mainloop()
     quote_txt = open('quote.txt','w+')

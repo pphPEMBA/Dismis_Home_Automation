@@ -30,9 +30,8 @@ internetTTS = internetTTS_path + '/SpeechDriver/tts/ServicesTTS/internetTTS/'
 #search google
 def google(voice_text, accept_path):
     os.system('aplay ' + accept_path +' &')
-    
     webbrowser.open('https://www.google.com/search?q={}'.format(voice_text))
-    result = 'opening sir' + voice_text + 'in google search'
+    result = 'opening sir your query in google.com'
     print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
     print(' ')
     print(' ')
@@ -42,6 +41,7 @@ def google(voice_text, accept_path):
     print(' ')
     print('\t\t\t\tSkill: google')
     print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
+    speak(result)
     google_txt = open('google.txt','w+')
     google_txt.write(result)
     os.system('gnome-terminal -x python3 ' + internetTTS + '__tts.py &')
@@ -67,9 +67,10 @@ def search_pics(voice_text, accept_path):
     print(' ')
     print('\t\t\t\tSkill: search_pics')
     print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
-    _txt = open('.txt','w+')
-    _txt.write(result)
-    os.system('gnome-terminal -x python3 ' + internetTTS + '__tts.py &')
+    speak(result)
+    search_pics_txt = open('search_pics.txt','w+')
+    search_pics_txt.write(result)
+    os.system('gnome-terminal -x python3 ' + internetTTS + 'search_pics__tts.py &')
     print(' ')
 
 def askinternet(voice_text, accept_path):
@@ -140,7 +141,6 @@ def open_website(voice_text, accept_path):
     reg_ex = re.search('open (.+)', voice_text)
     if reg_ex:
         domain = reg_ex.group(1)
-        result = 'aye aye captain'
         url = 'https://www.' + domain + '.com'
         webbrowser.open(url)
         print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
@@ -151,7 +151,7 @@ def open_website(voice_text, accept_path):
         print(' ')
         print(' ')
         print('--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
-        result = 'Openned sir' + voice_text
+        result = 'Opened sir'
         open_website_txt = open('open_website.txt','w+')
         open_website_txt.write(result)
         os.system('gnome-terminal -x python3 ' + internetTTS + 'open_website__tts.py &')

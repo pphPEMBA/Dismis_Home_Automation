@@ -253,25 +253,3 @@ def imgoingout(accept_path):
     except socket.gaierror:
         pass
 
-#still testing
-""" CONVERTING *.txt > *.pdf """
-from fpdf import FPDF 
-def txt_to_pdf():
-    time.sleep(2)
-    #writing_textFile()
-    # save FPDF() class into 
-    # a variable pdf 
-    pdf = FPDF() 
-    # Add a page 
-    pdf.add_page() 
-    # set style and size of font 
-    # that you want in the pdf 
-    pdf.set_font("Arial", size = 15) 
-    # open the text file in read mode 
-    f = open("/home/pemba/d1_SuperDismis/Dismis-HA_GUI/Services/test.txt", "r") 
-    # insert the texts in pdf 
-    pdf.image("/home/pemba/d1_SuperDismis/Dismis-HA_GUI/Services/test.jpg", 50, 50)
-    for x in f: 
-        pdf.cell(200, 10, txt = x, ln = 1, align = 'C') 
-    # save the pdf with name .pdf 
-    pdf.output("/home/pemba/d1_SuperDismis/Dismis-HA_GUI/Services/mygfg.pdf") 

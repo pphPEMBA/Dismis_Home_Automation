@@ -22,14 +22,15 @@ echo " "
 pico2wave -w speech.wav "Hello PEMBA, please reconfigure m p g one two three volume at 30 percent in PulseAudio Control. Now opening PulseAudio Control application" && aplay speech.wav && rm speech.wav
 mpg123 $DISMIS_HOME_AUTOMATION_SETUP_DIR/.volReconfigure_MPG123.mp3
 pavucontrol
+mkdir $DISMIS_HOME_AUTOMATION_SETUP_DIR/backup
 now=.$(date +"%T")
-mkdir $DISMIS_HOME_AUTOMATION_SETUP_DIR/$now
+mkdir $DISMIS_HOME_AUTOMATION_SETUP_DIR/backup/$now
 echo "Making Backup of .profile .bashrc"
 cp -r ~/.profile $DISMIS_HOME_AUTOMATION_SETUP_DIR/$now/.profile
 cp -r ~/.bashrc $DISMIS_HOME_AUTOMATION_SETUP_DIR/$now/.bashrc
-cp -r ~/.profile ~/.profile.backup
-cp -r ~/.bashrc ~/.bashrc.backup
-echo "Now moving .bashrc .profile .D-Slave1_banner.py to ~/ directory"
+#cp -r ~/.profile ~/.profile.backup
+#cp -r ~/.bashrc ~/.bashrc.backup
+echo "Now coping .bashrc .profile .D-Slave1_banner.py to ~/ directory"
 cp -r $DISMIS_HOME_AUTOMATION_SETUP_DIR/.bashrc $DISMIS_HOME_AUTOMATION_SETUP_DIR/.profile $DISMIS_HOME_AUTOMATION_SETUP_DIR/.D-Slave1_banner.py ~/
 echo "Creating Dismis_Home_Automation and coping files from source to Dismis_Home_Automation"
 mkdir -p ~/.Dismis_Home_Automation

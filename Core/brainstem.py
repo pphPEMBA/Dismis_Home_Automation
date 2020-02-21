@@ -111,14 +111,14 @@ def cmd(voice_text, name, default_CityLocation, openweatherAPI, main_sender, mai
         
 
     elif check_message(['what','do', 'have']) or check_message(['what','do', 'have','plans']) or check_message(['whats','schedule']) or check_message(['what\'s','schedule'])\
-        or check_message(['do','have','anything']) or check_message(['what','day','look']):
+        or check_message(['do','have','anything']) or check_message(['what','day','look']) or check_message(['do','plans']):
         googleCalender.main(voice_text, accept_path)
 
 
-    elif check_message(['what','date']) or check_message(['whats','date']) or check_message(['tell', 'date']): #error
-        date_time.date(accept_path)
-    elif check_message(['what', 'time']) or check_message(['whats', 'time']) or check_message(['tell', 'time']): #error
-        date_time.currenttime(accept_path)
+    #elif check_message(['what','date']) or check_message(['whats','date']) or check_message(['tell', 'date']): #error
+    #    date_time.date(accept_path)
+    #elif check_message(['what', 'time']) or check_message(['whats', 'time']) or check_message(['tell', 'time']): #error
+    #    date_time.currenttime(accept_path)
 
     elif check_message(['good','morning']) or check_message(['good','afternoon']) or check_message(['good','evening']) or check_message(['good','night']):
         greeting.Greeting(accept_path)
